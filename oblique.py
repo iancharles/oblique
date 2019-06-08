@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import random
+
 file = 'strategies.txt'
 
 strategies = []
@@ -9,4 +11,8 @@ with open(file, 'r+') as f:
         if line != '' :
             strategies.append(line.strip())
 
-print(strategies)
+
+def picker():
+    return random.choice(strategies)
+
+print(picker())

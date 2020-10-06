@@ -12,7 +12,5 @@ with open(file, 'r+') as f:
             strategies.append(line.strip())
 
 
-def picker():
-    return random.choice(strategies)
+print(random.choice(strategies))
 
-print(picker())
